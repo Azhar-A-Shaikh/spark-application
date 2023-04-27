@@ -1,0 +1,67 @@
+
+create table orders_data (
+	order_id int,
+    customer_id int,
+    item_id int,
+    order_date datetime,
+	item_description varchar(30),
+    item_value int,
+    quantity int,
+    total_amount int
+);
+
+create table customer_id (
+	customer_id int,
+    customer_first_name varchar (20),
+    customer_last_name varchar(20),
+    customer_location varchar(20)
+);
+
+create table item_details (
+	item_id int,
+	item_description varchar(30),
+    item_price int
+);
+
+INSERT INTO orders_data (order_id, customer_id, item_id, order_date, item_description, item_value, quantity, total_amount)
+VALUES
+    (1, 101, 201, '2023-04-27 09:00:00', 'Item 1', 10, 5, 50),
+    (2, 102, 202, '2023-04-27 10:30:00', 'Item 2', 15, 3, 45),
+    (3, 103, 203, '2023-04-27 11:45:00', 'Item 3', 20, 2, 40),
+    (4, 104, 204, '2023-04-27 13:15:00', 'Item 4', 12, 6, 72),
+    (5, 105, 205, '2023-04-27 14:30:00', 'Item 5', 18, 4, 72),
+    (6, 106, 206, '2023-04-27 15:45:00', 'Item 6', 25, 1, 25),
+    (7, 107, 207, '2023-04-27 16:30:00', 'Item 7', 8, 7, 56),
+    (8, 108, 208, '2023-04-27 17:45:00', 'Item 8', 30, 2, 60),
+    (9, 109, 209, '2023-04-27 18:15:00', 'Item 9', 14, 4, 56),
+    (10, 110, 210, '2023-04-27 19:30:00', 'Item 10', 22, 3, 66),
+    (11, 111, 211, '2023-04-27 20:45:00', 'Item 11', 16, 5, 80),
+    (12, 112, 212, '2023-04-27 21:15:00', 'Item 12', 9, 8, 72),
+    (13, 113, 213, '2023-04-27 22:30:00', 'Item 13', 11, 2, 22),
+    (14, 114, 214, '2023-04-27 23:45:00', 'Item 14', 28, 1, 28),
+    (15, 115, 215, '2023-04-28 01:00:00', 'Item 15', 17, 6, 102),
+    (16, 116, 216, '2023-04-28 02:15:00', 'Item 16', 19, 3, 57),
+    (17, 117, 217, '2023-04-28 03:30:00', 'Item 17', 13, 4, 52),
+    (18, 118, 218, '2023-04-28 04:45:00', 'Item 18', 21, 2, 42)
+
+INSERT INTO customer_id (customer_id, customer_first_name, customer_last_name, customer_location)
+VALUES
+    (1, 'John', 'Doe', 'New York'),
+    (2, 'Jane', 'Smith', 'London'),
+    (3, 'Michael', 'Johnson', 'Paris'),
+    (4, 'Emily', 'Brown', 'Sydney'),
+    (5, 'William', 'Taylor', 'Tokyo'),
+    (6, 'Olivia', 'Lee', 'Berlin');
+
+INSERT INTO item_details (item_id, item_description, item_price)
+VALUES
+    (1, 'Product A', 100),
+    (2, 'Product B', 50),
+    (3, 'Product C', 75),
+    (4, 'Product D', 120),
+    (5, 'Product E', 90),
+    (6, 'Product F', 60),
+    (7, 'Product G', 80),
+    (8, 'Product H', 110),
+    (9, 'Product I', 70),
+    (10, 'Product J', 95);
