@@ -10,18 +10,6 @@ create table orders_data (
     total_amount int
 );
 
-create table customer_id (
-	customer_id int,
-    customer_first_name varchar (20),
-    customer_last_name varchar(20),
-    customer_location varchar(20)
-);
-
-create table item_details (
-	item_id int,
-	item_description varchar(30),
-    item_price int
-);
 
 INSERT INTO orders_data (order_id, customer_id, item_id, order_date, item_description, item_value, quantity, total_amount)
 VALUES
@@ -44,24 +32,3 @@ VALUES
     (17, 117, 217, '2023-04-28 03:30:00', 'Item 17', 13, 4, 52),
     (18, 118, 218, '2023-04-28 04:45:00', 'Item 18', 21, 2, 42)
 
-INSERT INTO customer_id (customer_id, customer_first_name, customer_last_name, customer_location)
-VALUES
-    (1, 'John', 'Doe', 'New York'),
-    (2, 'Jane', 'Smith', 'London'),
-    (3, 'Michael', 'Johnson', 'Paris'),
-    (4, 'Emily', 'Brown', 'Sydney'),
-    (5, 'William', 'Taylor', 'Tokyo'),
-    (6, 'Olivia', 'Lee', 'Berlin');
-
-INSERT INTO item_details (item_id, item_description, item_price)
-VALUES
-    (1, 'Product A', 100),
-    (2, 'Product B', 50),
-    (3, 'Product C', 75),
-    (4, 'Product D', 120),
-    (5, 'Product E', 90),
-    (6, 'Product F', 60),
-    (7, 'Product G', 80),
-    (8, 'Product H', 110),
-    (9, 'Product I', 70),
-    (10, 'Product J', 95);
