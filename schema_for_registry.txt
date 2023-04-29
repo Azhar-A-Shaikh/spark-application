@@ -1,0 +1,22 @@
+# JSON VALUE
+
+{
+  "type": "record",
+  "name": "orders_data",
+  "namespace": "com.example",
+  "fields": [
+    { "name": "order_id", "type": "int" },
+    { "name": "customer_id", "type": "int" },
+    { "name": "item_id", "type": "int" },
+    { "name": "order_date", "type": "long", "logicalType": "timestamp-millis" },
+    { "name": "item_value", "type": "int" },
+    { "name": "quantity", "type": "int" },
+    { "name": "total_amount", "type": "int" }
+  ]
+}
+
+# AVRO KEY 
+
+{
+  "type": "int"
+}
