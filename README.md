@@ -22,7 +22,8 @@ A Kafka consumer instance is created using the provided Kafka configuration sett
 Messages are polled from the Kafka topic, and if a message is received, the message value is deserialized using the fetched JSON schema and dict_to_car function, creating a new Car instance.
 The Car instance is then printed to the console.
 The consumer instance is closed after the user interrupts the program.
-Overall, it appears that this project is a simple example of how to produce and consume messages using the Confluent Kafka Python library, as well as how to use JSON schemas to deserialize message values into custom Python objects.
+
+### ABOUT THE PROJECT 
 
 The project is focused on developing a SQL infinite script which is used to insert data into a SQL table named "orders data". Along with that, a Kafka producer and consumer code were also developed to communicate with the SQL table and send/receive data.
 
